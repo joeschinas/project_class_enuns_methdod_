@@ -68,6 +68,7 @@ public class Trabalho {
         contratos.remove(contrato);    
     }
     public Double renda(int ano, int mes){
+        
         Double sum = baseSalario;
         Calendar cal = Calendar.getInstance();
         
@@ -77,15 +78,14 @@ public class Trabalho {
         int c_mes = 1+cal.get(Calendar.MONTH);
         if(mes == c_mes && ano == c_ano){
           
-          sum +=c.valorTotal();
+           sum +=c.valorTotal();
           }
        
         }
-         return sum;
+       
+        return sum;
  
     }
-
-  
     }
 
 

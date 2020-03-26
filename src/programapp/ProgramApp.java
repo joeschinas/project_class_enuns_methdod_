@@ -51,10 +51,10 @@ public class ProgramApp {
        
         System.out.println("Entre com o mes e o ano para calcular a renda:");
         String mesEano = read.next();
-        int mes = Integer.parseInt(mesEano.substring(0,1));
-         read.next();
+        int mes = Integer.parseInt(mesEano.substring(0,2));
+        
         int ano = Integer.parseInt(mesEano.substring(3));
-         read.next();
+      
         System.out.print("Nome:"+Trabalhador.getNome());
         System.out.println("Departamento"+ Trabalhador.getDepart().getNome());
         System.out.println("Renda do "+mesEano+":"+ Trabalhador.renda(ano, mes));
